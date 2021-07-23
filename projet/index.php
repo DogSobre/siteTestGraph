@@ -5,7 +5,6 @@ include 'functions.php';
     // Init session.
 session_start();
 
-$req = 'SELECT continent_area FROM graph3 WHERE id=1';
 
 ?>
 
@@ -16,9 +15,21 @@ $req = 'SELECT continent_area FROM graph3 WHERE id=1';
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo.png">
     <title>Market Graph</title>
+
 </head>
 
 <body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+<script>
+$(document).ready(function(){
+    console.log("ça va péter");
+
+    
+
+})
+
+</script>
     <div class="img">
         <img src="assets/images/logo.png"></img>
     </div>
@@ -56,7 +67,7 @@ $req = 'SELECT continent_area FROM graph3 WHERE id=1';
                 <div class="formulaire">
                     <form name="inscription" method="POST">
                         Nom : <input type="text" name="pseudo"/>
-                        <input type="submit" name="submit" value="submit"/>
+                        <input type="submit" name="submit" value=<?php  ?>/>
                     </form>
                 </div>
 
@@ -99,7 +110,7 @@ $req = 'SELECT continent_area FROM graph3 WHERE id=1';
             </main>
         </section>
     </div>
-
+<!-- 
     <canvas id="myChart" width="400" height="400"></canvas>
 <script>
 var ctx = document.getElementById('myChart').getContext('2d');
@@ -138,9 +149,7 @@ var myChart = new Chart(ctx, {
     }
 });
 </script>
- 
-
-
+  -->
 </body>
 <footer>
     © 2021 Market Pay, all rights reserved

@@ -8,9 +8,11 @@ class functions{
         $continentArea = $_POST['continent_area'];
 
             //Prepare the SQL request :
-        $sql    = 'SELECT continent_area FROM graph3 WHERE id=1';
+        $sql    = "INSERT INTO `test` (`pseudo`) VALUES ('pseudo');";
         $req    = PDO::query($sql) or die("Error ! <br/>".$sql."<br/>".PDO::errorInfo());
         $data   = PDOStatement::fetch($req);
+
+        echo $req;
     
         PDOStatement::closeCursor($req);
         $db = null; // Close database connection.
