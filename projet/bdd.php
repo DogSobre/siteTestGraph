@@ -15,3 +15,15 @@ catch(PDOException $e)
 {
     echo "Connection failed: ".$e->getMessage();
 }
+
+
+// $sql = "INSERT INTO test (pseudo)
+// VALUES ('lol')";
+
+// if ($db->query($sql) === TRUE) {
+//   echo "New record created successfully";
+// } else {
+//   echo "Error: " . $sql . "<br>" . $db->error;
+// }
+
+// $db->close();

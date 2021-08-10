@@ -21,15 +21,8 @@ session_start();
 <body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-<script>
-$(document).ready(function(){
-    console.log("ça va péter");
-
-    
-
-})
-
-</script>
+<script src="index.js"></script>
+<script src="jquery.js"></script>
     <div class="img">
         <img src="assets/images/logo.png"></img>
     </div>
